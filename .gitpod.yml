@@ -9,19 +9,19 @@ tasks:
 - name: Terminal 1 - database
   openMode: split-left
   before: 
-    git fetch
-    git pull
-    npm install
+    echo "opened"
   init:
+    npm install
     npm start
   
 - name: terminal 2 - client
   openMode: split-right
-  before: 
+  before:
+    echo "welcome home"
+  init: 
     cd client
     git fetch
     git pull
     npm install
-  init:
     npm start
 
