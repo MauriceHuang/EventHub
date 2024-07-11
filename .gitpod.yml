@@ -9,9 +9,8 @@ tasks:
 - name: Terminal 1 - database
   openMode: split-left
   before: |
-    echo "opened"
-  init:
     npm install
+  init:
     npm start
   
 - name: terminal 2 - client
