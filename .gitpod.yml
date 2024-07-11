@@ -8,7 +8,7 @@ tasks:
 
 - name: Terminal 1 - database
   openMode: split-left
-  before: 
+  before: |
     echo "opened"
   init:
     npm install
@@ -18,7 +18,7 @@ tasks:
   openMode: split-right
   before:
     echo "welcome home"
-  init: 
+  init: |
     cd client
     git fetch
     git pull
